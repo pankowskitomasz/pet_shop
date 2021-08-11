@@ -123,10 +123,10 @@ class LoginForm extends Component{
             <Container fluid className={"login-form align-items-center p-0 py-5 d-flex minh-100vh "+this.props.classExt}>
                 <Row className="mx-auto text-start w-100 pt-5">
                     <Col xs={11} md={5} lg={4} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-primary p-4 rounded bg-white shadow text-primary opacity-9 fw-bold z-index-10"
+                        <Form className="text-start w-100 border border-dark-yellow p-4 rounded bg-form shadow text-dark-yellow fw-bold z-index-10"
                             autoComplete="off"
                             method="POST">
-                            <div className="border-bottom border-primary mb-4">
+                            <div className="border-bottom border-dark-yellow mb-4">
                                 <p className="fw-bold mb-1">
                                     User Login
                                 </p>
@@ -135,7 +135,7 @@ class LoginForm extends Component{
                                 <Form.Label>Login</Form.Label>
                                  <Form.Control type="text" 
                                     placeholder="Enter login" 
-                                    className="rounded-pill border-primary text-primary"
+                                    className="rounded-pill border-dark-yellow text-dark-yellow"
                                     maxLength="50"
                                     name="userName"
                                     onChange={this.updateUserData.bind(this)} 
@@ -146,7 +146,7 @@ class LoginForm extends Component{
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" 
                                     placeholder="Enter password" 
-                                    className="rounded-pill border-primary text-primary"
+                                    className="rounded-pill border-dark-yellow text-dark-yellow"
                                     maxLength="40"
                                     name="userPass"
                                     onChange={this.updateUserData.bind(this)} 
@@ -154,22 +154,22 @@ class LoginForm extends Component{
                                     required/>
                             </Form.Group>
                             <div className="w-100 text-start py-3">
-                                <p className="text-primary fw-normal">
+                                <p className="text-dark-yellow fw-normal">
                                     Not registered? 
-                                    <Link to={this.props.backLink.href} className="text-primary fw-bold text-decoration-none">
+                                    <Link to={this.props.backLink.href} className="text-dark-yellow fw-bold text-decoration-none">
                                          {this.props.backLink.name}
                                     </Link>
                                 </p>
                             </div>
-                            <div className="w-100 text-end py-2 border-top border-primary">
+                            <div className="w-100 text-end py-2 border-top border-dark-yellow">
                                 <Button 
-                                    variant="outline-primary" 
+                                    variant="outline-light" 
                                     type="reset" 
-                                    className="mx-1 rounded-pill">
+                                    className="mx-1 rounded-pill border-dark-yellow text-dark-yellow">
                                     Clear
                                 </Button>
                                 <Button variant="outline-primary" 
-                                    className="mx-1 rounded-pill"
+                                    className="mx-1 rounded-pill border-dark-yellow text-dark-yellow"
                                     onClick={this.sendForm.bind(this)}>
                                     Login
                                 </Button>

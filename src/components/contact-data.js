@@ -20,16 +20,16 @@ class ContactData extends Component{
                 <Row className="mx-auto text-center w-100 pt-5">
                     <Col xs={10} sm={6} className="mx-auto text-dark p-0">
                     </Col>
-                    <Col xs={10} sm={6} className="mx-auto text-white p-0 d-flex align-items-center text-shadow">
+                    <Col xs={10} sm={6} className="mx-auto text-white p-0 d-flex align-items-center">
                         <div className="p-5 contact-bg">
-                            <h1 className="display-4 fw-bold font-logo text-primary">
+                            <h1 className="display-4 fw-bold font-logo text-white text-shadow">
                                 Contact us
                             </h1>
-                            <p className="initialism">
-                                Hungry? Don't wait call us! Our delicious pizzas are 
-                                waiting for you!
+                            <p className="initialism text-dark-yellow">
+                                Need help? Don't wait! Call us now or visit us today. Our employees
+                                are always ready to help you.
                             </p>
-                            <address className="d-block w-50 mx-auto p-2 mb-4 initialism text-center">
+                            <address className="d-block w-50 mx-auto p-2 mb-4 initialism text-dark-yellow">
                                 00-001 City,<br/> 
                                 Street 12A,<br/>
                                 678 142 838<br/>

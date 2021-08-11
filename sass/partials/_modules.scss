@@ -1,6 +1,31 @@
+.about{
+    &-desc{
+        @include set-background($bg__about-desc-img,0,"top left","cover","scroll");
+    }
+    &-ext{
+        @include set-background($bg__about-ext-img,0,"top right","cover","scroll");
+    }
+}
 .bg{
+    &-basket{
+        @include set-background($bg__basket-img,0,"top center","cover","fixed");
+    }
     &-footer{
         @include set-background($bg__footer-img,0,"center right","cover","scroll");
+    }
+    &-form{
+        @include set-background($bg__form-img,0,"center","cover","scroll");
+    }
+    &-home{
+        @include set-background($bg__home-img,0,"top left","cover","scroll");
+    }
+    &-service{
+        @include set-background($bg__service-img,0,"center right","cover","fixed");
+    }
+}
+.border{
+    &-dark-yellow{
+        border-color: $color__dark-yellow!important;
     }
 }
 .contact{
@@ -24,6 +49,11 @@
 .register{
     &-form{
         @extend .login-form;
+    }
+}
+.text{
+    &-dark-yellow{
+        color: darken($color__dark-yellow,10%)!important;
     }
 }
 textarea{

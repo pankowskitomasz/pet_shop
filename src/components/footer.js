@@ -8,13 +8,13 @@ class Footer extends Component{
     render(){
         return(      
             <footer>
-                <Container fluid className="d-flex align-items-center p-3 bg-footer border-top border-primary z-index-0">
+                <Container fluid className="d-flex align-items-center p-3 bg-footer border-top border-dark-yellow z-index-0">
                     <Row className="mx-auto text-center d-flex w-100">
                         <Col xs={10} className="mx-auto">
-                            <small className="my-0 text-dark">
+                            <small className="my-0 text-dark-yellow">
                                 Copyright &copy; 2021 Tomasz Pankowski. All rights reserved. 
-                                <Link to={this.props.privacyLink.href} className="text-dark text-decoration-none">
-                                    {this.props.privacyLink.name}
+                                <Link to={this.props.privacyLink.href} className="text-dark-yellow text-decoration-none">
+                                     {this.props.privacyLink.name}
                                 </Link>
                             </small>
                         </Col>

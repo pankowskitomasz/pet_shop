@@ -24,8 +24,8 @@ class HomeTop extends Component{
                             src="img/home/home-img.png"/>
                     </Col>
                     <Col xs={12} lg={7} className="mx-auto p-0 d-flex align-items-center order-1 order-lg-2">
-                        <div className="p-5 text-lg-start text-center">
-                            <h1 className="display-3 text-warning fw-bold text-uppercase text-shadow">
+                        <div className="p-5 text-lg-start text-center mt-5">
+                            <h1 className="display-3 text-info fw-bold text-uppercase text-shadow">
                                 Pet shop! 
                             </h1>
                             <h1 className="lead text-dark-yellow fw-bold text-uppercase">

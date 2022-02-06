@@ -1,4 +1,4 @@
-CREATE TABLE pet_shop_tokens(
+CREATE TABLE petshop_tokens(
     id INT NOT NULL AUTO_INCREMENT,
     userid INT NOT NULL,
     logged DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -6,5 +6,5 @@ CREATE TABLE pet_shop_tokens(
     token VARCHAR(40) NOT NULL,
     messages INT DEFAULT 0,
     PRIMARY KEY(id),
-    FOREIGN KEY(userid) REFERENCES pet_shop_users(id)
+    FOREIGN KEY(userid) REFERENCES petshop_users(id)
 );

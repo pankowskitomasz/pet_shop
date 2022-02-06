@@ -63,7 +63,7 @@ class ContactForm extends Component {
         && this.state.formData.phoneNumber.length!==0
         && this.state.formData.messageText.length!==0){
             let formData = contactFormApi.getFormData(this.state.formData,cookieApi.getCookie("msgcount"));
-            contactFormApi.sendData(this.props.backNav,formData,cookieApi.getCookie,APP_LINKS.messages);
+            contactFormApi.sendData(this.props.backNav,formData,cookieApi.setCookie,APP_LINKS.messages);
             this.clearForm();
         }
     }
@@ -77,7 +77,7 @@ class ContactForm extends Component {
             <Container fluid className={"contact-form align-items-center p-0 py-5  d-flex minh-50vh " + this.props.classExt}>
                 <Row className="mx-auto text-center w-100">
                     <Col xs={11} md={6} className="mx-auto p-0 d-flex align-items-center">
-                        <Form className="text-start w-100 border border-dark-yellow p-4 rounded bg-form shadow text-dark-yellow fw-bold"
+                        <Form className="text-start w-100 border border-dark-yellow p-4 rounded bg-form opacity-9 shadow text-dark-yellow fw-bold"
                             autoComplete="off"
                             method="POST">
                             <div className="border-bottom border-dark-yellow mb-4">
@@ -89,7 +89,7 @@ class ContactForm extends Component {
                                 <Form.Label>First Name</Form.Label>
                                 <Form.Control type="text"
                                     placeholder="Enter first name"
-                                    className="rounded-pill border-dark-yellow text-dark-yellow"
+                                    className="rounded-pill bg-white border-dark-yellow text-dark-yellow opacity-8"
                                     maxLength="50"
                                     name="firstName"
                                     onChange={this.updateFormData.bind(this)} 
@@ -100,7 +100,7 @@ class ContactForm extends Component {
                                 <Form.Label>Last Name</Form.Label>
                                 <Form.Control type="text"
                                     placeholder="Enter last name"
-                                    className="rounded-pill border-dark-yellow text-dark-yellow"
+                                    className="rounded-pill bg-white border-dark-yellow text-dark-yellow opacity-8"
                                     maxLength="50"
                                     name="lastName"
                                     onChange={this.updateFormData.bind(this)} 
@@ -111,7 +111,7 @@ class ContactForm extends Component {
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email"
                                     placeholder="Enter email"
-                                    className="rounded-pill border-dark-yellow text-dark-yellow"
+                                    className="rounded-pill bg-white border-dark-yellow text-dark-yellow opacity-8"
                                     maxLength="50"
                                     name="emailAddress"
                                     onChange={this.updateFormData.bind(this)} 
@@ -122,7 +122,7 @@ class ContactForm extends Component {
                                 <Form.Label>Phone</Form.Label>
                                 <Form.Control type="tel"
                                     placeholder="Enter phone"
-                                    className="rounded-pill border-dark-yellow text-dark-yellow"
+                                    className="rounded-pill bg-white border-dark-yellow text-dark-yellow opacity-8"
                                     maxLength="15"
                                     name="phoneNumber"
                                     onChange={this.updateFormData.bind(this)} 
@@ -133,7 +133,7 @@ class ContactForm extends Component {
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea"
                                     rows={4}
-                                    className="border-dark-yellow text-dark-yellow"
+                                    className="bg-white border-dark-yellow text-dark-yellow opacity-8"
                                     maxLength="250"
                                     name="messageText"
                                     onChange={this.updateFormData.bind(this)} 

@@ -27,12 +27,17 @@ const appCfg = {
 };
 
 const APP_LINKS = {
-    messages: "message.php",
+    messages: "http://localhost/pet_shop/public/message.php",
     register: "register.php",
-    users: "user.php"
+    users: "http://localhost/pet_shop/public/user.php"
+};
+
+const msgCfg = {
+    pageSize: 10
 };
 
 export {
     appCfg,
-    APP_LINKS
+    APP_LINKS,
+    msgCfg
 }
